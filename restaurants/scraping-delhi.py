@@ -22,8 +22,8 @@ for pagenum in range(1,pagenums+1) :
 	a_tags = soup.find_all('a',class_="result-title hover_feedback zred bold ln24   fontsize0 ")
 	names = names + [tag.string.strip() for tag in a_tags]
 
-	div_tags = soup.find_all('div', class_="col-m-16 search-result-address grey-text nowrap ln22")
-	addresses = addresses + [tag.string.strip() for tag in div_tags]
+	r_tags = soup.find_all('a',class_="result-reviews search-result-reviews right fontsize5 grey-text")
+	addresses = addresses + [tag.string.strip() for tag in r_tags]
 
 	span_tags = soup.find_all('span', class_="col-s-11 col-m-12 nowrap pl0")
 	
@@ -49,9 +49,9 @@ print ratings
 
 rows = zip(names, addresses, cuisines, costfor2, timings, ratings)
 
-with open('restaurants.csv','w') as outfile :
+with open('delhi-restaurants.csv','w') as outfile :
 	csv_out = csv.writer(outfile)
-	csv_out.writerow(['name','address','cuisines','cost for 2','timings','rating'])
+	csv_out.writerow(['name','review-count','cuisines','cost for 2','timings','rating'])
 
 	for row in rows :
 		csv_out.writerow(row)
