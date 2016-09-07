@@ -1,0 +1,249 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_82fc4a2d070547ea8df2f8dcd9c4b307 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_82fc4a2d070547ea8df2f8dcd9c4b307" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_82fc4a2d070547ea8df2f8dcd9c4b307 = L.map('map_82fc4a2d070547ea8df2f8dcd9c4b307', {
+                                           center:[20.8913,78.0792],
+                                           zoom: 4,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_0829a4d8ff494fdebf171f92b2e4a02f = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_82fc4a2d070547ea8df2f8dcd9c4b307);
+
+        
+        
+            
+
+            var circle_marker_3ad0ce28ed764e8a96b85b08c45e11f0 = L.circle(
+                [15.2993,74.124],
+                50000,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_82fc4a2d070547ea8df2f8dcd9c4b307);
+            
+        
+            
+            var popup_2bad2a8be4db4da9b527cc02b26d72cc = L.popup({maxWidth: '300'});
+
+            
+                var html_2b72c9eaacc4483095175a60ce32a89c = $('         <div id="html_2b72c9eaacc4483095175a60ce32a89c"                 style="width: 100.0%; height: 100.0%;">                 {&#39;timing&#39;: &#39;Most retaraunts open between- 9AM to 2PM&#39;, &#39;cost&#39;: &#39;Average cost of restaraunts- Rs.861&#39;, &#39;best&#39;: &#39;Best Restaraunt =Burger Factory&#39;}, Unique cuisines of state-&#39;Drinks Only&#39;, &#39;Israeli</div>                 ')[0];
+                popup_2bad2a8be4db4da9b527cc02b26d72cc.setContent(html_2b72c9eaacc4483095175a60ce32a89c);
+            
+
+            circle_marker_3ad0ce28ed764e8a96b85b08c45e11f0.bindPopup(popup_2bad2a8be4db4da9b527cc02b26d72cc);
+
+            
+        
+        
+            
+
+            var circle_marker_8e6bea6e26944b44bab089be6f6920e6 = L.circle(
+                [12.971,77.594],
+                50000,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_82fc4a2d070547ea8df2f8dcd9c4b307);
+            
+        
+            
+            var popup_23393ef841904d88bb5d3872a439c9af = L.popup({maxWidth: '300'});
+
+            
+                var html_fe8ef91769f44660bb2ff27a0202060f = $('         <div id="html_fe8ef91769f44660bb2ff27a0202060f"                 style="width: 100.0%; height: 100.0%;">                 {&#39;timing&#39;: &#39;Most retaraunts open between- 10AM to 5PM&#39;, &#39;cost&#39;: &#39;Average cost of restaraunts- Rs.589&#39;, &#39;best&#39;: &#39;Best Restaraunt =38 Castle Street&#39;}, Unique cuisines of state-&#39;Kebab&#39;, &#39;Contemporary&#39;, &#39;Salgados&#39;, &#39;Australian&#39;, &#39;Syrian&#39;, &#39;Chili&#39;, &#39;BBQ</div>                 ')[0];
+                popup_23393ef841904d88bb5d3872a439c9af.setContent(html_fe8ef91769f44660bb2ff27a0202060f);
+            
+
+            circle_marker_8e6bea6e26944b44bab089be6f6920e6.bindPopup(popup_23393ef841904d88bb5d3872a439c9af);
+
+            
+        
+        
+            
+
+            var circle_marker_27fd52a426204352a96777274beeb408 = L.circle(
+                [28.704,77.102],
+                50000,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_82fc4a2d070547ea8df2f8dcd9c4b307);
+            
+        
+            
+            var popup_1fe7ea69dbb542bb9ee88c67d5000c63 = L.popup({maxWidth: '300'});
+
+            
+                var html_acc62149aef34cfcb3b3bc76424d8244 = $('         <div id="html_acc62149aef34cfcb3b3bc76424d8244"                 style="width: 100.0%; height: 100.0%;">                 {&#39;timing&#39;: &#39;Most retaraunts open between- 10AM to 4PM&#39;, &#39;cost&#39;: &#39;Average cost of restaraunts- Rs.701&#39;, &#39;best&#39;: &#39;Best Restaraunt =Raasta&#39;}, Unique cuisines of state-&#39;Sandwich&#39;, &#39;Bar Food&#39;, &#39;Bangladeshi&#39;, &#39;Armenian&#39;, &#39;Sri Lankan&#39;, &#39;Breakfast&#39;, &#39;Pakistani&#39;, &#39;Awadhi&#39;, &#39;Belgian</div>                 ')[0];
+                popup_1fe7ea69dbb542bb9ee88c67d5000c63.setContent(html_acc62149aef34cfcb3b3bc76424d8244);
+            
+
+            circle_marker_27fd52a426204352a96777274beeb408.bindPopup(popup_1fe7ea69dbb542bb9ee88c67d5000c63);
+
+            
+        
+        
+        
+        </script>
+        
