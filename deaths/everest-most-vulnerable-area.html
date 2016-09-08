@@ -1,0 +1,288 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_c80c49f647b44a25a652f4f0f7570b97 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_c80c49f647b44a25a652f4f0f7570b97" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_c80c49f647b44a25a652f4f0f7570b97 = L.map('map_c80c49f647b44a25a652f4f0f7570b97', {
+                                           center:[28.141389,86.851389],
+                                           zoom: 11,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_212b751d1faa467ca4588031311496bc = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_c80c49f647b44a25a652f4f0f7570b97);
+
+        
+        
+            
+
+            var marker_338898743c70407ab1c320e5383d2c3f = L.marker(
+                [28.015833,86.925],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c80c49f647b44a25a652f4f0f7570b97);
+            
+        
+            
+            var popup_4ed2ca499b494b50a637579533835687 = L.popup({maxWidth: '300'});
+
+            
+                var html_a212ac2260934f1d83fb6238f30f7bc2 = $('         <div id="html_a212ac2260934f1d83fb6238f30f7bc2"                 style="width: 100.0%; height: 100.0%;">                 N.E. Ridge, 19 people died here</div>                 ')[0];
+                popup_4ed2ca499b494b50a637579533835687.setContent(html_a212ac2260934f1d83fb6238f30f7bc2);
+            
+
+            marker_338898743c70407ab1c320e5383d2c3f.bindPopup(popup_4ed2ca499b494b50a637579533835687);
+
+            
+        
+        
+            
+
+            var marker_4d2e14fcf64e49489d9be6aa6c54076e = L.marker(
+                [28.141389,86.851389],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c80c49f647b44a25a652f4f0f7570b97);
+            
+        
+            
+            var popup_910d203c494f43e5939c8976aea39625 = L.popup({maxWidth: '300'});
+
+            
+                var html_4c03d60960a746e585c7de0b90b8e785 = $('         <div id="html_4c03d60960a746e585c7de0b90b8e785"                 style="width: 100.0%; height: 100.0%;">                 8600m N.E. Ridge, 8 people died here</div>                 ')[0];
+                popup_910d203c494f43e5939c8976aea39625.setContent(html_4c03d60960a746e585c7de0b90b8e785);
+            
+
+            marker_4d2e14fcf64e49489d9be6aa6c54076e.bindPopup(popup_910d203c494f43e5939c8976aea39625);
+
+            
+        
+        
+            
+
+            var marker_0fd52cb04d224cdca9e9b9abdcedb3ec = L.marker(
+                [27.995,86.872],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c80c49f647b44a25a652f4f0f7570b97);
+            
+        
+            
+            var popup_e1ad5434f04f4e85b55532b057797142 = L.popup({maxWidth: '300'});
+
+            
+                var html_4a9e903cc8434eb4ad46da7bc0f6bb19 = $('         <div id="html_4a9e903cc8434eb4ad46da7bc0f6bb19"                 style="width: 100.0%; height: 100.0%;">                 Khumbu Icefall , 38 people died here</div>                 ')[0];
+                popup_e1ad5434f04f4e85b55532b057797142.setContent(html_4a9e903cc8434eb4ad46da7bc0f6bb19);
+            
+
+            marker_0fd52cb04d224cdca9e9b9abdcedb3ec.bindPopup(popup_e1ad5434f04f4e85b55532b057797142);
+
+            
+        
+        
+            
+
+            var marker_703ec6bd712447218b2545d7f7565154 = L.marker(
+                [28.007222,86.859444],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c80c49f647b44a25a652f4f0f7570b97);
+            
+        
+            
+            var popup_c39ceb91161b42b889cd45e0562e163b = L.popup({maxWidth: '300'});
+
+            
+                var html_14e1f0b93a0549f1824aedc523c1941b = $('         <div id="html_14e1f0b93a0549f1824aedc523c1941b"                 style="width: 100.0%; height: 100.0%;">                 South Col, 6 people died here</div>                 ')[0];
+                popup_c39ceb91161b42b889cd45e0562e163b.setContent(html_14e1f0b93a0549f1824aedc523c1941b);
+            
+
+            marker_703ec6bd712447218b2545d7f7565154.bindPopup(popup_c39ceb91161b42b889cd45e0562e163b);
+
+            
+        
+        
+            
+
+            var marker_553414a45d6049bb901f93043c6603e3 = L.marker(
+                [27.988056,86.925278],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c80c49f647b44a25a652f4f0f7570b97);
+            
+        
+            
+            var popup_7ab81651dd3342a4af20feb90b71448b = L.popup({maxWidth: '300'});
+
+            
+                var html_7dc09eb8ff2b4ea2b0798452bd5587b4 = $('         <div id="html_7dc09eb8ff2b4ea2b0798452bd5587b4"                 style="width: 100.0%; height: 100.0%;">                 Near Summit, 6 people died here</div>                 ')[0];
+                popup_7ab81651dd3342a4af20feb90b71448b.setContent(html_7dc09eb8ff2b4ea2b0798452bd5587b4);
+            
+
+            marker_553414a45d6049bb901f93043c6603e3.bindPopup(popup_7ab81651dd3342a4af20feb90b71448b);
+
+            
+        
+        
+        
+        </script>
+        

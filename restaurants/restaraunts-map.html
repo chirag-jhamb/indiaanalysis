@@ -110,7 +110,7 @@
             
         
             
-            <style> #map_82fc4a2d070547ea8df2f8dcd9c4b307 {
+            <style> #map_5b239ee15afb49a0988d11531ab24233 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -126,7 +126,7 @@
             
         
             
-            <div class="folium-map" id="map_82fc4a2d070547ea8df2f8dcd9c4b307" ></div>
+            <div class="folium-map" id="map_5b239ee15afb49a0988d11531ab24233" ></div>
         
         
         
@@ -140,9 +140,9 @@
             var northEast = L.latLng(90, 180);
             var bounds = L.latLngBounds(southWest, northEast);
 
-            var map_82fc4a2d070547ea8df2f8dcd9c4b307 = L.map('map_82fc4a2d070547ea8df2f8dcd9c4b307', {
+            var map_5b239ee15afb49a0988d11531ab24233 = L.map('map_5b239ee15afb49a0988d11531ab24233', {
                                            center:[20.8913,78.0792],
-                                           zoom: 4,
+                                           zoom: 5,
                                            maxBounds: bounds,
                                            layers: [],
                                            crs: L.CRS.EPSG3857
@@ -151,95 +151,134 @@
         
         
             
-            var tile_layer_0829a4d8ff494fdebf171f92b2e4a02f = L.tileLayer(
-                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+            var tile_layer_aba877fac4f84289b21845698d087b81 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.control-room/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
                     minZoom: 1,
-                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_82fc4a2d070547ea8df2f8dcd9c4b307);
+                ).addTo(map_5b239ee15afb49a0988d11531ab24233);
 
         
         
             
 
-            var circle_marker_3ad0ce28ed764e8a96b85b08c45e11f0 = L.circle(
+            var marker_baed54ac8ca8453ab97cea7ad34bced0 = L.marker(
                 [15.2993,74.124],
-                50000,
                 {
-                    color: '#3186cc',
-                    fillColor: '#3186cc',
-                    fillOpacity: 0.6
+                    icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_82fc4a2d070547ea8df2f8dcd9c4b307);
+                .addTo(map_5b239ee15afb49a0988d11531ab24233);
             
         
             
-            var popup_2bad2a8be4db4da9b527cc02b26d72cc = L.popup({maxWidth: '300'});
+            var popup_f8cfe0a80a38448f9a9dac822e2c3a2b = L.popup({maxWidth: '300'});
 
             
-                var html_2b72c9eaacc4483095175a60ce32a89c = $('         <div id="html_2b72c9eaacc4483095175a60ce32a89c"                 style="width: 100.0%; height: 100.0%;">                 {&#39;timing&#39;: &#39;Most retaraunts open between- 9AM to 2PM&#39;, &#39;cost&#39;: &#39;Average cost of restaraunts- Rs.861&#39;, &#39;best&#39;: &#39;Best Restaraunt =Burger Factory&#39;}, Unique cuisines of state-&#39;Drinks Only&#39;, &#39;Israeli</div>                 ')[0];
-                popup_2bad2a8be4db4da9b527cc02b26d72cc.setContent(html_2b72c9eaacc4483095175a60ce32a89c);
+                var html_fc00b0b49022465b9e6b47ec1c6b8c6c = $('         <div id="html_fc00b0b49022465b9e6b47ec1c6b8c6c"                 style="width: 100.0%; height: 100.0%;">                 Unique cuisines of the state =([u&#39;Drinks Only&#39;, u&#39;Israeli&#39;],,Most retaraunts open between- 9AM to 2PM, Average cost of restaraunts- Rs.861, Best Restaraunt =Burger Factory</div>                 ')[0];
+                popup_f8cfe0a80a38448f9a9dac822e2c3a2b.setContent(html_fc00b0b49022465b9e6b47ec1c6b8c6c);
             
 
-            circle_marker_3ad0ce28ed764e8a96b85b08c45e11f0.bindPopup(popup_2bad2a8be4db4da9b527cc02b26d72cc);
+            marker_baed54ac8ca8453ab97cea7ad34bced0.bindPopup(popup_f8cfe0a80a38448f9a9dac822e2c3a2b);
 
             
         
         
             
 
-            var circle_marker_8e6bea6e26944b44bab089be6f6920e6 = L.circle(
+            var marker_3339014fcb1b4058bf5963b3fe3eb5b9 = L.marker(
                 [12.971,77.594],
-                50000,
                 {
-                    color: '#3186cc',
-                    fillColor: '#3186cc',
-                    fillOpacity: 0.6
+                    icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_82fc4a2d070547ea8df2f8dcd9c4b307);
+                .addTo(map_5b239ee15afb49a0988d11531ab24233);
             
         
             
-            var popup_23393ef841904d88bb5d3872a439c9af = L.popup({maxWidth: '300'});
+            var popup_af9b0720d0554133b9c9967470a34aed = L.popup({maxWidth: '300'});
 
             
-                var html_fe8ef91769f44660bb2ff27a0202060f = $('         <div id="html_fe8ef91769f44660bb2ff27a0202060f"                 style="width: 100.0%; height: 100.0%;">                 {&#39;timing&#39;: &#39;Most retaraunts open between- 10AM to 5PM&#39;, &#39;cost&#39;: &#39;Average cost of restaraunts- Rs.589&#39;, &#39;best&#39;: &#39;Best Restaraunt =38 Castle Street&#39;}, Unique cuisines of state-&#39;Kebab&#39;, &#39;Contemporary&#39;, &#39;Salgados&#39;, &#39;Australian&#39;, &#39;Syrian&#39;, &#39;Chili&#39;, &#39;BBQ</div>                 ')[0];
-                popup_23393ef841904d88bb5d3872a439c9af.setContent(html_fe8ef91769f44660bb2ff27a0202060f);
+                var html_22f5264e1d8541a2adfaa00a8c30c49e = $('         <div id="html_22f5264e1d8541a2adfaa00a8c30c49e"                 style="width: 100.0%; height: 100.0%;">                 Unique cuisines of the state =([u&#39;Australian&#39;, u&#39;Chili&#39;, u&#39;Contemporary&#39;, u&#39;Kebab&#39;, u&#39;Salgados&#39;,        u&#39;Syrian&#39;],      ,Most retaraunts open between- 10AM to 5PM, Average cost of restaraunts- Rs.589, Best Restaraunt =38 Castle Street</div>                 ')[0];
+                popup_af9b0720d0554133b9c9967470a34aed.setContent(html_22f5264e1d8541a2adfaa00a8c30c49e);
             
 
-            circle_marker_8e6bea6e26944b44bab089be6f6920e6.bindPopup(popup_23393ef841904d88bb5d3872a439c9af);
+            marker_3339014fcb1b4058bf5963b3fe3eb5b9.bindPopup(popup_af9b0720d0554133b9c9967470a34aed);
 
             
         
         
             
 
-            var circle_marker_27fd52a426204352a96777274beeb408 = L.circle(
+            var marker_f2f0b560109f4c7683d6fcc22d9147ee = L.marker(
                 [28.704,77.102],
-                50000,
                 {
-                    color: '#3186cc',
-                    fillColor: '#3186cc',
-                    fillOpacity: 0.6
+                    icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_82fc4a2d070547ea8df2f8dcd9c4b307);
+                .addTo(map_5b239ee15afb49a0988d11531ab24233);
             
         
             
-            var popup_1fe7ea69dbb542bb9ee88c67d5000c63 = L.popup({maxWidth: '300'});
+            var popup_1275bcd08cfb4fe49d20c17247f0adc8 = L.popup({maxWidth: '300'});
 
             
-                var html_acc62149aef34cfcb3b3bc76424d8244 = $('         <div id="html_acc62149aef34cfcb3b3bc76424d8244"                 style="width: 100.0%; height: 100.0%;">                 {&#39;timing&#39;: &#39;Most retaraunts open between- 10AM to 4PM&#39;, &#39;cost&#39;: &#39;Average cost of restaraunts- Rs.701&#39;, &#39;best&#39;: &#39;Best Restaraunt =Raasta&#39;}, Unique cuisines of state-&#39;Sandwich&#39;, &#39;Bar Food&#39;, &#39;Bangladeshi&#39;, &#39;Armenian&#39;, &#39;Sri Lankan&#39;, &#39;Breakfast&#39;, &#39;Pakistani&#39;, &#39;Awadhi&#39;, &#39;Belgian</div>                 ')[0];
-                popup_1fe7ea69dbb542bb9ee88c67d5000c63.setContent(html_acc62149aef34cfcb3b3bc76424d8244);
+                var html_3bc3583ab39b41b1bde01d423b58d970 = $('         <div id="html_3bc3583ab39b41b1bde01d423b58d970"                 style="width: 100.0%; height: 100.0%;">                 Unique cuisines of the state =([u&#39;Armenian&#39;, u&#39;Bar Food&#39;, u&#39;Breakfast&#39;, u&#39;Pakistani&#39;],,Most retaraunts open between- 10AM to 4PM, Average cost of restaraunts- Rs.701, Best Restaraunt =Raasta</div>                 ')[0];
+                popup_1275bcd08cfb4fe49d20c17247f0adc8.setContent(html_3bc3583ab39b41b1bde01d423b58d970);
             
 
-            circle_marker_27fd52a426204352a96777274beeb408.bindPopup(popup_1fe7ea69dbb542bb9ee88c67d5000c63);
+            marker_f2f0b560109f4c7683d6fcc22d9147ee.bindPopup(popup_1275bcd08cfb4fe49d20c17247f0adc8);
+
+            
+        
+        
+            
+
+            var marker_c6a6bfca7823450db61a5a1c35553525 = L.marker(
+                [18.52,73.857],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5b239ee15afb49a0988d11531ab24233);
+            
+        
+            
+            var popup_868c1555bfa3490996463fa2f9690afd = L.popup({maxWidth: '300'});
+
+            
+                var html_a855c62efaa64a14a8d6c9ce764e88b5 = $('         <div id="html_a855c62efaa64a14a8d6c9ce764e88b5"                 style="width: 100.0%; height: 100.0%;">                 Unique cuisines of the state =([u&#39;Kebabs&#39;, u&#39;Malwani&#39;],,Most retaraunts open between- 10AM to 4PM, Average cost of restaraunts- Rs.811, Best Restaraunt =Kayani Bakery</div>                 ')[0];
+                popup_868c1555bfa3490996463fa2f9690afd.setContent(html_a855c62efaa64a14a8d6c9ce764e88b5);
+            
+
+            marker_c6a6bfca7823450db61a5a1c35553525.bindPopup(popup_868c1555bfa3490996463fa2f9690afd);
+
+            
+        
+        
+            
+
+            var marker_b75292d1f95645fc96ef6b07c8c40daa = L.marker(
+                [13.082,80.27],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5b239ee15afb49a0988d11531ab24233);
+            
+        
+            
+            var popup_96a731893b4d4561b64a03d65e614d28 = L.popup({maxWidth: '300'});
+
+            
+                var html_1aa941e839514266aff2b850cddcc2f7 = $('         <div id="html_1aa941e839514266aff2b850cddcc2f7"                 style="width: 100.0%; height: 100.0%;">                 Unique cuisines of the state =([u&#39;0&#39;, u&#39;Deli&#39;, u&#39;Fusion&#39;, u&#39;Grill&#39;, u&#39;Pan Asian&#39;],,Most retaraunts open between- 10AM to 5PM, Average cost of restaraunts- Rs.759, Best Restaraunt =Bombay Kulfi</div>                 ')[0];
+                popup_96a731893b4d4561b64a03d65e614d28.setContent(html_1aa941e839514266aff2b850cddcc2f7);
+            
+
+            marker_b75292d1f95645fc96ef6b07c8c40daa.bindPopup(popup_96a731893b4d4561b64a03d65e614d28);
 
             
         
