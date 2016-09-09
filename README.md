@@ -1,5 +1,5 @@
 # india-analysis
-#### Uses Anacnonda on python 2.7 with libraries: Folium, wikitables, seaborn
+#### Uses [Anaconda](https://www.continuum.io/downloads) on python 2.7 with libraries: [Folium](https://github.com/python-visualization/folium), [wikitables](https://pypi.python.org/pypi/wikipedia/), seaborn
 ### analysed 3 domains(planning to do more): retaraunts of various states, politics in India and deaths on everest
 #### retaraunts scrape data through zomato and analyses the data, while plotting details on the map state-wise-
 ![restaraunts](https://raw.githubusercontent.com/chirag-jhamb/india-analysis/master/img/restaurant%20notebook.png)
