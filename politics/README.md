@@ -5,4 +5,4 @@ First, data is scraped from www.myneta.info and for lok sabha elections of the y
 Then the notebook analyses the data, uses machine learning to predict the results and gives out the feature importance-
 ![feature-importance](https://raw.githubusercontent.com/chirag-jhamb/india-analysis/master/img/elections.png)
 
-Then the assets, liabilities and education level of the candidates/winners is analyses
+Then the assets, liabilities and education level of the candidates/winners is analysed
