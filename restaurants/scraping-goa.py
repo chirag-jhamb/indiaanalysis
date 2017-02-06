@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup as bs
 import urllib2
 import unicodecsv as csv
 
-pagenums = 75
 
+pagenums = 45
 names = []
 addresses = []
 cuisines = []
@@ -26,7 +26,7 @@ for pagenum in range(1,pagenums+1) :
 	addresses = addresses + [tag.string.strip() for tag in r_tags]
 
 	span_tags = soup.find_all('span', class_="col-s-11 col-m-12 nowrap pl0")
-	
+
 	for tag in span_tags :
 		cuisines.append(', '.join(map(lambda tag: tag.string.strip(), tag.find_all('a'))))
 
